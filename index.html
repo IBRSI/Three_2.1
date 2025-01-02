@@ -26,7 +26,7 @@
         document.body.appendChild(renderer.domElement);
 
         // Загрузка 3D модели
-        const loader = new GLTFLoader();
+        const loader = new GLBLoader();
         loader.load('path/to/your/logo.glb', (gltf) => {
             const model = gltf.scene;
             scene.add(model);
